@@ -11,9 +11,7 @@ class SplashScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image(image: NetworkImage(
-              //This is a placeholder logo
-              'https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-2.png')),
+          Image.asset('assets/nexus-logo.png'),
           Text(
             'NEXUS',
             style: TextStyle(

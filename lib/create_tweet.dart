@@ -9,26 +9,24 @@ class CreateTweetScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body:
+      Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          AppBar(
-            backgroundColor: Color(0xFF07A3BC),
-            elevation: 0,
-            title: Text(
-              'Create post',
-              style: TextStyle(fontWeight: FontWeight.w900),
-            ),
-          ),
           TextFormField(
-            decoration: InputDecoration(
-              hintText: 'What is on your mind today?',
-              fillColor: Color(0xFF213C57),
-              filled: true,
-            ),
+            minLines: 2,
+            maxLines: 7,
+            keyboardType: TextInputType.multiline,
             maxLength: 240,
-          ),
-        ],
-      ),
-    );
-  }
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderSide: BorderSide.none,
+                borderRadius: BorderRadius.circular(5)),
+            hintText: 'What is going on?',
+            hintStyle: TextStyle(color: Colors.white54),
+            fillColor: Color(0xFF213C57),
+            filled: true,)),
+            ]),
+          );}
 }

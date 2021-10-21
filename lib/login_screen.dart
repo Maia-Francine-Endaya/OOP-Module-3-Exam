@@ -13,10 +13,7 @@ class LogInScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image(
-            image: NetworkImage(
-                'https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-2.png'),
-          ),
+          Image.asset('assets/nexus-logo.png'),
           Text(
             'Welcome to',
             style: TextStyle(
