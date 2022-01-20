@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget {
         children: [
           Image.asset('assets/nexus-logo.png'),
           Text(
-            'NEXUS',
+            'NEXUS', textAlign: TextAlign.center,
             style: TextStyle(
               color: Color(0xFF07A3BC),
               fontWeight: FontWeight.w500,

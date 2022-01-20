@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         canvasColor: Color(0xFF01172F),
       ),
-      home: const CreateTweetScreen(),
+      home: const DashboardScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
